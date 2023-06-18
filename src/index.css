@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+  --primary: #4BA3A3;
+  --background: #87B5B4;
+  --lightBackground: #C0D7D8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.w-full {
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+#editor, #preview {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #editor {
+    width: 50%;
+  }
+
+  #preview {
+    width: 70%;
+  }
+}
+
+#textarea {
+  font-size: .875rem;
+  min-height: 200px;
+  /* line-height: 1rem; */
+}
+
+.header-bar {
+  width: 100%;
+  background-color: var(--primary);
+  border: 1px solid black;
+  padding: 6px 15px;
+}
+
+.text-display-title {
+  /* color: black; */
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Russo One';
+  margin: 0;
+}
+
+.text-display {
+  background-color: var(--lightBackground);
+  width: 100%;
+  border: 1px solid black;
+  /* border-top: none; */
+  outline: none;
+  padding: 4px;
+}
+
+.preview-display {
+  height: 1000px;
+  padding: 10px;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.drop-shadow {
+  box-shadow: 
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+pre, code {
+  background-color: white;
+  padding: 5px;
+  line-height: 1.25rem;
+}
