@@ -48,7 +48,7 @@ And here. | Okay. | I think we get it.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
-![freeCodeCamp Logo](https://images.pexels.com/photos/1887725/pexels-photo-1887725.jpeg)
+(https://images.pexels.com/photos/1887725/pexels-photo-1887725.jpeg)
 `);
 
   useEffect(() => {
