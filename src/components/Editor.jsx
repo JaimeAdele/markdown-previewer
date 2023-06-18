@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Editor = ({ setMarkup }) => {
+const Editor = ({ markup, setMarkup }) => {
   return (
     <div id='editor'>
       <div className='header-bar drop-shadow'>
@@ -9,6 +9,7 @@ const Editor = ({ setMarkup }) => {
       <textarea
         id='textarea'
         className='text-display monospace drop-shadow'
+        value={markup}
         onChange={(e) => setMarkup(e.target.value)}
       />
     </div>
