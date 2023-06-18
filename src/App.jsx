@@ -4,7 +4,8 @@ import Editor from './components/Editor';
 import Previewer from './components/Previewer';
 
 const App = () => {
-  const [markup, setMarkup] = useState(`# Welcome to my React Markdown Previewer!
+  const [markup, setMarkup] =
+    useState(`# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
 ### And here's some other cool stuff:
@@ -48,7 +49,7 @@ And here. | Okay. | I think we get it.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
-(https://images.pexels.com/photos/1887725/pexels-photo-1887725.jpeg)
+![really cool frog image](https://images.pexels.com/photos/1887725/pexels-photo-1887725.jpeg)
 `);
 
   useEffect(() => {
