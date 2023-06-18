@@ -4,6 +4,7 @@
   --primary: #4BA3A3;
   --background: #87B5B4;
   --lightBackground: #C0D7D8;
+  --text: #212529;
 }
 
 * {
@@ -12,6 +13,8 @@
 
 body {
   background-color: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1.5;
 }
 
 .w-full {
@@ -51,7 +54,7 @@ body {
   width: 100%;
   background-color: var(--primary);
   border: 1px solid black;
-  padding: 6px 15px;
+  padding: 6px 16px;
 }
 
 .text-display-title {
@@ -71,11 +74,6 @@ body {
   padding: 4px;
 }
 
-.preview-display {
-  height: 1000px;
-  padding: 10px;
-}
-
 .monospace {
   font-family: monospace;
 }
@@ -85,8 +83,42 @@ body {
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-pre, code {
+.preview-display {
+  min-height: 750px;
+  padding: 16px;
+  color: var(--text);
+}
+
+.preview-display pre, .preview-display code {
   background-color: white;
   padding: 5px;
   line-height: 1.25rem;
+}
+
+.preview-display img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.preview-display h1 {
+  width: 100%;
+  border-bottom: 2px solid var(--text);
+}
+
+.preview-display h2 {
+  width: 100%;
+  border-bottom: 1px solid var(--text);
+}
+
+.preview-display table, .preview-display th, .preview-display td {
+  border: 2px solid var(--text);
+  border-collapse: collapse;
+  padding: 2px 4px;
+  text-align: left;
+}
+
+.preview-display blockquote {
+  border-left: 2.5px solid var(--text);
+  padding-left: 12px;
 }
