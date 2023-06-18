@@ -136,5 +136,5 @@ And here. | Okay. | I think we get it.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
-(https://images.pexels.com/photos/1887725/pexels-photo-1887725.jpeg)
+![really cool frog image](https://images.pexels.com/photos/1887725/pexels-photo-1887725.jpeg)
 `);return sn.useEffect(()=>{console.log(t)},[e]),et.jsxs("div",{id:"container",children:[et.jsx(vO,{markup:t,setMarkup:e}),et.jsx(UD,{markup:t})]})};c_.createRoot(document.getElementById("root")).render(et.jsx(EC.StrictMode,{children:et.jsx(FD,{})}));
